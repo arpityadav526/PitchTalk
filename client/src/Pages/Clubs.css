@@ -1,0 +1,49 @@
+.clubs-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.clubs-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.clubs-card h1,
+.clubs-card h2 {
+  margin-bottom: 8px;
+}
+
+.clubs-card p {
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.clubs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.club-chip {
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #111827;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.active-chip {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+.clubs-note {
+  margin-top: 14px;
+  color: #b45309;
+}

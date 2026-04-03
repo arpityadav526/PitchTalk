@@ -1,0 +1,134 @@
+.post-detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.post-detail-card,
+.comments-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.post-detail-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.post-detail-author {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.post-detail-author-name {
+  color: #111827;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-detail-author-name:hover {
+  color: #16a34a;
+}
+
+.post-detail-meta {
+  color: #6b7280;
+  margin-top: 4px;
+  font-size: 0.95rem;
+}
+
+.post-detail-title {
+  font-size: 2rem;
+  margin: 18px 0 12px;
+  color: #111827;
+}
+
+.post-detail-content {
+  line-height: 1.8;
+  color: #374151;
+  white-space: pre-wrap;
+}
+
+.post-detail-image {
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 14px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.detail-like-btn,
+.comment-form button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.comments-list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.comment-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  background: #f9fafb;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.post-detail-state {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-state {
+  color: #b91c1c;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.comment-login-note a {
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+}
