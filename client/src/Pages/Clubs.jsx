@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { getUserProfile, toggleFavoriteClub, toggleFavoritePlayer } from "../Services/userService";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../Context/AuthContext";
 import { extractObject } from "../utils/extractors";
 import "./Clubs.css";
 

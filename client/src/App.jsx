@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./App.css";
 
-import MainLayout from "./components/layout/MainLayout";
-import ProtectedRoute from "./Components/common /ProtectedRoute";
-import PublicOnlyRoute from "./Components/common /PublicOnlyRoute";
+import MainLayout from "./Components/layout/MainLayout";
+import ProtectedRoute from "./Components/common/ProtectedRoute";
+import PublicOnlyRoute from "./Components/common/PublicOnlyRoute";
 
 import Home from "./Pages/Home";
 import Feed from "./Pages/Feed";
@@ -17,8 +18,15 @@ import Register from "./Pages/Register";
 import NotFound from "./Pages/NotFound";
 
 function App() {
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    document.body.classList.remove("dark", "light");
+    document.body.classList.add(isDark ? "dark" : "light");
+  }, [isDark]);
+
   return (
-    <MainLayout>
+    <MainLayout isDark={isDark} setIsDark={setIsDark}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/feed" element={<Feed />} />

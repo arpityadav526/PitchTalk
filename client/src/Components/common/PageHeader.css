@@ -1,0 +1,26 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.page-header-title {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.page-header-subtitle {
+  margin-top: 8px;
+  color: var(--text-soft);
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+.page-header-action {
+  display: flex;
+  align-items: center;
+}

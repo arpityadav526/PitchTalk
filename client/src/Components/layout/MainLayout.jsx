@@ -1,12 +1,13 @@
 import Navbar from "./Navbar";
-import "./MainLayout.css";
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ children, isDark, setIsDark }) => {
   return (
-    <div className="layout">
-      <Navbar />
-      <main className="main-content">{children}</main>
-    </div>
+    <>
+      <Navbar isDark={isDark} setIsDark={setIsDark} />
+      <main style={{ paddingTop: "76px" }}>
+        {children}
+      </main>
+    </>
   );
 };
 

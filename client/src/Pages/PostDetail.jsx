@@ -4,7 +4,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Heart, Send, UserCircle } from "lucide-react";
 import { addCommentToPost, getPostById, likePost } from "../Services/postService";
 import { extractObject } from "../utils/extractors";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../Context/AuthContext";
 import "./PostDetail.css";
 
 const PostDetail = () => {

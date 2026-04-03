@@ -22,10 +22,14 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const normalizeAuthResponse = (data) => {
-    if (data?.token) return data;
     if (data?.user && data?.token) {
       return { ...data.user, token: data.token };
     }
+
+    if (data?.token) {
+      return data;
+    }
+
     return data;
   };
 
